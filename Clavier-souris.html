@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+</head>
+<style>
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Inter:400,800");
+
+
+  :root {
+    --black: #000000;
+    --concrete: #f2f2f2;
+    --mystic: #deebf2;
+    --nepal: #95b3bf;
+    --tundora: #444444;
+    --white: #ffffff;
+
+    --font-size-m: 18px;
+    --font-size-xl: 32px;
+    --font-size-xs: 12px;
+    --font-size-xss: 16px;
+
+    --font-family-inter: "Inter", Helvetica;
+  }
+
+  .inter-extra-bold-tundora-14px {
+    color: var(--tundora);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .inter-normal-tundora-14px {
+    color: var(--tundora);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .inter-normal-tundora-12px {
+    color: var(--tundora);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .inter-nextra-bold-tundora-12px {
+    color: var(--tundora);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .inter-normal-tundora-12px-gest {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xss);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  .inter-extra-bold-tundora-24px {
+    color: var(--tundora);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  .inter-normal-icon-tundora-14px {
+    color: var(--white);
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .screen a {
+    display: contents;
+    text-decoration: none;
+  }
+
+  .container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+  }
+
+  .container-center-horizontal>* {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* screen - index */
+
+  .index {
+    align-items: flex-start;
+    background-color: var(--white);
+    border: 1px none;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    height: 2811px;
+    overflow: hidden;
+    padding: 13px 0;
+    width: 1100px;
+  }
+
+  .index .header {
+    align-items: flex-start;
+    align-self: flex-end;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    gap: 18px;
+    height: auto;
+    justify-content: flex-start;
+    margin-right: -18px;
+    min-height: 215px;
+    width: 1213px;
+  }
+
+  .index .logo-service-it-transparent-2 {
+    height: 88px;
+    margin-left: 1px;
+    object-fit: cover;
+    width: 300px;
+  }
+
+  .index .overlap-group-2 {
+    height: 109px;
+    position: relative;
+    width: 1211px;
+  }
+
+  .index .rectangle-90 {
+    background-color: var(--nepal);
+    height: 96px;
+    left: 0;
+    position: absolute;
+    top: 13px;
+    width: 1195px;
+  }
+
+  .index .cables-adaptateurs {
+    left: 18px;
+    letter-spacing: 0;
+    line-height: 97.0px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    white-space: nowrap;
+    width: 1193px;
+  }
+
+  .index .titre-2 {
+    margin-left: 26px;
+    width: 804px;
+  }
+
+  .index .rectangle-91 {
+    background-color: var(--nepal);
+    height: 11px;
+    margin-left: 3px;
+    width: 205px;
+  }
+
+  .index .overlap-group1 {
+    height: 90px;
+    margin-left: 3px;
+    margin-top: 16px;
+    position: relative;
+    width: 715px;
+  }
+
+  .index .description-de-loffre {
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 521px;
+  }
+
+  .index .pour-pouvoir-aliment {
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 32px;
+    width: 1100px;
+  }
+
+  .index .flex-row {
+    align-items: center;
+    display: flex;
+    gap: 33px;
+    min-width: 798px;
+  }
+
+  .index .icon-information {
+    height: 46px;
+    width: 50px;
+  }
+
+  .index .bien-vrifier-la-com {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 1.55px;
+    min-height: 34px;
+    width: 900px;
+  }
+
+  .index .accesoires-commands {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    min-height: 428px;
+    width: 713px;
+  }
+
+  .index .titre {
+    gap: 16px;
+    min-height: 63px;
+    width: 525px;
+  }
+
+  .index .rectangle {
+    background-color: var(--nepal);
+    height: 11px;
+    width: 205px;
+  }
+
+  .index .s-com {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 2px;
+    min-height: 35px;
+    width: 521px;
+  }
+
+  .index .overlap-group-container {
+    align-items: flex-start;
+    display: flex;
+    height: 365px;
+    min-width: 713px;
+  }
+
+  .index .overlap-group {
+    height: 203px;
+    margin-right: 4px;
+    margin-top: 5px;
+    position: relative;
+    width: 203px;
+  }
+
+  .index .rectangle-97 {
+    background-color: var(--white);
+    border-radius: 10px 10px 0px 0px;
+    height: 185px;
+    left: 3px;
+    position: absolute;
+    top: 8px;
+    width: 198px;
+  }
+
+  .index .cdp2hd-10 {
+    height: 203px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 203px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .index .overlap-group-1 {
+    height: 147px;
+    position: relative;
+    width: 208px;
+  }
+
+  .index .rectangle-70 {
+    background-color: var(--mystic);
+    border-radius: 0px 0px 10px 10px;
+    height: 147px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 203px;
+    margin-left: 1px;
+  }
+
+  .index .adaptateur-hdmi-to-usb-c {
+    left: 0;
+    letter-spacing: 0;
+    line-height: 80.2px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    white-space: nowrap;
+    width: 205px;
+  }
+
+  .index .cet-adaptateur-perme {
+    left: 0;
+    letter-spacing: 0;
+    line-height: 97.0px;
+    position: absolute;
+    text-align: center;
+    top: 31px;
+    white-space: nowrap;
+    width: 205px;
+  }
+
+  .index .usb-c {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    left: 0;
+    height: 44px;
+    position: absolute;
+    top: 99px;
+    width: 208px;
+  }
+
+  .index .istockphoto-1138477098-612x612-10 {
+    height: 21px;
+    margin-right: 2.0px;
+    margin-bottom: 10px;
+    width: 56px;
+  }
+
+  .index .hdmi-icon {
+    height: 25px;
+    margin-right: 2.0px;
+    margin-bottom: 10px;
+    width: 56px;
+  }
+
+  .index .usb-c-1 {
+    letter-spacing: 0;
+    margin-right: 2.0px;
+    min-height: 15px;
+    text-align: center;
+    white-space: nowrap;
+    width: 206px;
+  }
+
+  .index .overlap-group-container-2 {
+    margin-right: 32px;
+  }
+
+  .index .overlap-group-container-3 {
+    margin-left: 27px;
+  }
+
+  .index .commande-matriel {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 24px;
+    min-height: 472px;
+    width: 655px;
+  }
+
+  .index .titre-1 {
+    gap: 16px;
+    min-height: 63px;
+    width: 523px;
+    margin-left: 15px;
+  }
+
+  .index .comment {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 35px;
+    width: 521px;
+  }
+
+  .index .flex-row-1 {
+    gap: 20px;
+    height: 397px;
+    min-width: 655px;
+  }
+
+  .index .overlap-group3 {
+    align-items: center;
+    align-self: flex-end;
+    background-color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 392px;
+    padding: 19px 0;
+    width: 270px;
+  }
+
+  .index .overlap-group-3 {
+    height: 75px;
+    margin-left: 3.0px;
+    position: relative;
+    width: 267px;
+  }
+
+  .index .je-choisis-lquipem {
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    width: 267px;
+  }
+
+  .index .ellipse-6 {
+    background: linear-gradient(180deg, rgb(56, 191, 217) 0%, rgb(124, 106, 175) 100%);
+    border-radius: 16.5px;
+    height: 33px;
+    left: 115px;
+    position: absolute;
+    top: 0;
+    width: 33px;
+  }
+
+  .index .number {
+    left: 114px;
+    top: 4px;
+    width: 35px;
+  }
+
+  .index .icon-cart {
+    height: 69px;
+    margin-right: 19.0px;
+    margin-top: 32px;
+    object-fit: cover;
+    width: 69px;
+  }
+
+  .index .warning-2 {
+    height: 45px;
+    margin-top: 15px;
+  }
+
+  .index .group-28 {
+    align-self: flex-end;
+    margin-bottom: 0.38px;
+  }
+
+  .index .important-je-vrif {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    min-height: 45px;
+    width: 300px;
+  }
+
+  .index .warning-1 {
+    height: 90px;
+    margin-top: 29px;
+  }
+
+  .index .group-29 {
+    margin-top: 6.26px;
+  }
+
+  .index .si-je-ne-trouve-pas {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    min-height: 90px;
+    width: 300px;
+  }
+
+  .index .right-arrow-4 {
+    align-self: center;
+    margin-bottom: 6.0px;
+  }
+
+  .index .overlap-group1-1 {
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 392px;
+    padding: 19px 0;
+  }
+
+  .index .overlap-group2 {
+    height: 75px;
+    position: relative;
+    width: 270px;
+  }
+
+  .index .je-formule-ma-demand {
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .index .ellipse-7 {
+    background: linear-gradient(180deg, rgb(56, 191, 217) 0%, rgb(124, 106, 175) 100%);
+    border-radius: 16.5px;
+    height: 33px;
+    left: 118px;
+    position: absolute;
+    bottom: 10px;
+    width: 33px;
+  }
+
+  .index .number-1 {
+    left: 117px;
+    top: 3px;
+    width: 35px;
+  }
+
+  .index .email-2 {
+    height: 73px;
+    margin-right: 1.0px;
+    margin-top: 32px;
+    object-fit: cover;
+    width: 73px;
+  }
+
+  .index .je-lui-envoie-un-ema {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 12px;
+    margin-top: 10px;
+    min-height: 90px;
+  }
+
+  .index .overlap-group-4 {
+    align-items: flex-end;
+    background: linear-gradient(180deg, rgb(56, 191, 217) 0%, rgb(124, 106, 175) 100%);
+    border-radius: 5px;
+    display: flex;
+    height: 39px;
+    margin-top: 10px;
+    min-width: 214px;
+    padding: 2px 0;
+  }
+
+  .index .trouver-mon-gestionnaire-de-commandes {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 20px;
+    padding-top: 6px;
+    height: 33px;
+    text-align: center;
+    width: 300px;
+  }
+
+  .index .traite-commande {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+    width: 719px;
+  }
+
+  .index .flex-row-2 {
+    align-self: flex-end;
+    height: 118px;
+    margin-right: 2px;
+    margin-top: 26px;
+    min-width: 710px;
+  }
+
+  .index .overlap-group-5 {
+    height: 115px;
+    position: relative;
+    width: 165px;
+  }
+
+  .index .commande {
+    left: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 45px;
+    width: 89px;
+  }
+
+  .index .surname {
+    top: 70px;
+    width: 165px;
+  }
+
+  .index .ellipse-6-1 {
+    background: linear-gradient(180deg, rgb(56, 191, 217) 0%, rgb(124, 106, 175) 100%);
+    border-radius: 20px;
+    height: 40px;
+    left: 60px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+  }
+
+  .index .number-2 {
+    left: 56px;
+    top: 6px;
+    width: 48px;
+  }
+
+  .index .right-arrow-4-1 {
+    height: 75px;
+    margin-left: 16px;
+    object-fit: cover;
+    width: 75px;
+  }
+
+  .index .overlap-group6 {
+    align-self: flex-end;
+    height: 117px;
+    margin-left: 29px;
+    position: relative;
+    width: 159px;
+  }
+
+  .index .partie-4 {
+    min-height: 117px;
+    width: 159px;
+  }
+
+  .index .ellipse-8 {
+    background: linear-gradient(180deg, rgb(56, 191, 217) 0%, rgb(124, 106, 175) 100%);
+    border-radius: 20px;
+    height: 40px;
+    margin-right: 13.0px;
+    width: 40px;
+  }
+
+  .index .overlap-group2-1 {
+    height: 71px;
+    margin-right: 4.0px;
+    position: relative;
+    width: 155px;
+  }
+
+  .index .surname-1 {
+    top: 26px;
+    width: 155px;
+  }
+
+  .index .reception {
+    left: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 83px;
+  }
+
+  .index .number-3 {
+    left: 49px;
+    top: 6px;
+    width: 48px;
+  }
+
+  .index .right-arrow-5 {
+    margin-left: 7px;
+  }
+
+  .index .overlap-group5 {
+    height: 116px;
+    margin-left: 11px;
+    position: relative;
+    width: 173px;
+  }
+
+  .index .partie-5 {
+    min-height: 116px;
+    width: 173px;
+    margin-left: 5px;
+  }
+
+  .index .ellipse-7-1 {
+    background: linear-gradient(180deg, rgb(56, 191, 217) 0%, rgb(124, 106, 175) 100%);
+    border-radius: 20px;
+    height: 40px;
+    margin-right: 3.0px;
+    width: 40px;
+  }
+
+  .index .overlap-group1-2 {
+    height: 70px;
+    margin-right: 4.0px;
+    position: relative;
+    width: 169px;
+  }
+
+  .index .surname-2 {
+    top: 25px;
+    width: 169px;
+  }
+
+  .index .mise-a-disposition {
+    left: 0px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+
+  .index .number-4 {
+    left: 61px;
+    top: 6px;
+    width: 48px;
+  }
+
+  .index .overlap-group3-1 {
+    align-items: center;
+    background-color: var(--mystic);
+    display: flex;
+    gap: 10px;
+    height: 108px;
+    justify-content: flex-end;
+    margin-top: 31px;
+    margin-left: 125px;
+    padding: 10px 0;
+  }
+
+  .index .group-28-1 {
+    height: 50px;
+    margin-top: 0.62px;
+    width: 50px;
+    margin-left: 15px;
+  }
+
+  .index .mon-container {
+    align-items: center;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-height: 81px;
+  }
+
+  .index .mon-matriel-ncessi {
+    letter-spacing: 0;
+    margin-top: 15px;
+    height: 20px;
+    width: 800px;
+  }
+
+  .index .x1-mon-gestionnaire {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 20px;
+    height: 50px;
+    width: 800px;
+  }
+
+  .index .flex-row-3 {
+    align-items: flex-start;
+    display: flex;
+    margin-left: 180px;
+  }
+
+  .index .group {
+    height: 33px;
+    width: 35px;
+  }
+
+  .index .number-5 {
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+  }
+
+  .index .number-5-1 {
+    margin-left: 5px;
+  }
+
+  .index .overlap-group-container-4 {
+    align-items: flex-end;
+    background-color: var(--nepal);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 365px;
+    padding: 3px 3px;
+    width: 217px;
+  }
+
+  .index .partie {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .index .right-arrow {
+    height: 75px;
+    object-fit: cover;
+    width: 75px;
+  }
+
+  .index .surname-3 {
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+  }
+
+  .index .titre-3 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .index .warning {
+    align-items: flex-start;
+    display: flex;
+    gap: 22px;
+    margin-left: 11.0px;
+    min-width: 247px;
+  }
+
+  .index .text-space {
+    line-height: 15px;
+    top: 3px;
+  }
+</style>
+
+<body style="margin: 0; background: #ffffff">
+  <input type="hidden" id="anPageName" name="page" value="index" />
+  <div class="container-center-horizontal">
+    <div class="index screen">
+      <div class="titre-2 titre-3">
+        <div class="rectangle-91"></div>
+        <div class="overlap-group1">
+          <div class="description-de-loffre inter-extra-bold-tundora-14px">
+            <span class="inter-extra-bold-tundora-14px">Description de l’offre</span>
+          </div>
+          <p class="pour-pouvoir-aliment inter-normal-tundora-14px">
+            <span class="inter-normal-tundora-14px">Découvrez notre sélection d'accessoires essentiels pour vos appareils IT.</span>
+          </p>
+        </div>
+        <div class="flex-row">
+          <img class="icon-information" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/icon-warning-1@2x.png" alt="icon-information" />
+          <p class="bien-vrifier-la-com inter-normal-tundora-14px">
+            <span class="inter-normal-tundora-14px">Bien vérifier la compatibilité du matériel avec votre poste de travail.<br />En cas de doute, n'hesitez pas à vous rapprocher de </span><span class="inter-extra-bold-tundora-14px">votre gestionnaire de commandes ou votre CI.</span>
+          </p>
+        </div>
+      </div>
+      <div class="commande-matriel">
+        <div class="titre-1 titre-3">
+          <div class="rectangle"></div>
+          <p class="comment inter-extra-bold-tundora-14px">
+            <span class="inter-extra-bold-tundora-14px">Comment commander mon matériel ?</span>
+          </p>
+        </div>
+        <div class="flex-row-1 flex-row-3">
+          <div class="overlap-group3">
+            <div class="overlap-group-3">
+              <p class="je-choisis-lquipem inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-12px">Je choisis l’équipement dont j’ai besoin</span>
+              </p>
+              <div class="ellipse-6"></div>
+              <div class="number number-5 inter-extra-bold-white-20px">
+                <span class="inter-normal-icon-tundora-14px">1</span>
+              </div>
+            </div>
+            <img class="icon-cart" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/add-to-cart-2-1@2x.png" alt="icon-cart" />
+            <div class="warning-2 warning">
+              <img class="group-28 group" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/group-28-1@2x.png" alt="Group 28" />
+              <p class="important-je-vrif inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-14px">Important : je vérifie bien la compatibilité de
+                  l&#39;équipement demandé avec mon appareil.</span>
+              </p>
+            </div>
+            <div class="warning-1 warning">
+              <img class="group-29 group" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/group-29-1@2x.png" alt="Group 29" />
+              <p class="si-je-ne-trouve-pas inter-normal-tundora-12px">
+                <span class="inter-extra-bold-tundora-14px">Je ne trouve pas l'equipement que je recherche !</span>
+                <br />
+                <br />
+                <span class="inter-normal-tundora-14px">Je me rapproche de mon gestionnaire de commandes.</span>
+              </p>
+            </div>
+          </div>
+          <img class="right-arrow-4 right-arrow" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/right-arrow-4-1@2x.png" alt="right-arrow 4" />
+          <div class="overlap-group1-1">
+            <div class="overlap-group2">
+              <p class="je-formule-ma-demand inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px">Je formule ma demande auprès de mon gestionnaire de
+                  commandes</span>
+              </p>
+              <div class="ellipse-7 number-1 number-5 inter-extra-bold-white-20px">
+                <span class="inter-normal-icon-tundora-14px">2</span>
+                <div class=""></div>
+              </div>
+            </div>
+            <img class="email-2" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/email-2-1@2x.png" alt="email 2" />
+            <p class="je-lui-envoie-un-ema inter-normal-tundora-12px">
+              <span class="inter-normal-tundora-14px">Je lui envoie un email avec les informations suivantes :<br /><br />•
+                Nom du matériel<br />• Référence<br />• Site de livraison /
+                Bâtiment (si pas de gestionnaire sur votre site)
+              </span>
+            </p>
+            <div class="overlap-group-4">
+              <p class="trouver-mon-gestionnaire-de-commandes inter-normal-white-14px">
+                <span style="color: #ffffff" class="inter-normal-tundora-12px-gest"><a style="color: #ffffff" href="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/Listing_gestionnaires_commandes_20230525.xlsx">
+                    Trouver mon gestionnaire de commandes</a></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="traite-commande">
+        <div class="flex-row-2 flex-row-3">
+          <div class="overlap-group-5">
+            <div class="commande inter-extra-bold-tundora-14px">
+              <span class="inter-extra-bold-tundora-14px">COMMANDE</span>
+            </div>
+            <p class="surname surname-3 inter-normal-tundora-12px">
+              <span class="inter-normal-tundora-12px">Le gestionnaire commande l&#39;équipement identifié auprès
+                du/des fournisseurs (ARIBA).</span>
+            </p>
+            <div class="ellipse-6-1"></div>
+            <div class="number-2 number-5 inter-extra-bold-white-20px">
+              <span class="inter-normal-icon-tundora-14px">3</span>
+            </div>
+          </div>
+          <img class="right-arrow-4-1" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/right-arrow-4-2@2x.png" alt="right-arrow 4" />
+          <div class="overlap-group6">
+            <div class="partie-4 partie">
+              <div class="ellipse-8"></div>
+              <div class="overlap-group2-1">
+                <p class="surname-1 surname-3 inter-normal-tundora-12px">
+                  <span class="inter-normal-tundora-12px">Le matériel est réceptionné par mon gestionnaire de
+                    commandes.</span>
+                </p>
+                <div class="reception inter-extra-bold-tundora-14px">
+                  <span class="inter-extra-bold-tundora-14px">RECEPTION</span>
+                </div>
+              </div>
+            </div>
+            <div class="number-3 number-5 inter-extra-bold-white-20px">
+              <span class="inter-normal-icon-tundora-14px">4</span>
+            </div>
+          </div>
+          <img class="right-arrow-5 right-arrow" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/right-arrow-5-1@2x.png" alt="right-arrow 5" />
+          <div class="overlap-group5">
+            <div class="partie-5 partie">
+              <div class="ellipse-7-1"></div>
+              <div class="overlap-group1-2">
+                <p class="surname-2 surname-3 inter-normal-tundora-12px">
+                  <span class="inter-normal-tundora-12px">Le gestionnaire informe l’utilisateur de la mise à
+                    disposition de sa commande.</span>
+                </p>
+                <div class="mise-a-disposition inter-extra-bold-tundora-14px">
+                  <span class="inter-extra-bold-tundora-14px">MISE A DISPOSITION</span>
+                </div>
+              </div>
+            </div>
+            <div class="number-4 number-5 number-5-1 inter-extra-bold-white-20px">
+              <span class="inter-normal-icon-tundora-14px">5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accesoires-commands">
+        <div class="titre titre-3">
+          <div class="rectangle"></div>
+          <p class="s-com inter-extra-bold-tundora-14px">
+            <span class="inter-extra-bold-tundora-14px">Câbles et adaptateurs les plus commandés sur Ariba</span>
+          </p>
+        </div>
+        <div class="overlap-group-container">
+          <div class="overlap-group-container-2 overlap-group-container-4">
+            <div class="overlap-group">
+              <div class="rectangle-97"></div>
+              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/cdp2hd-10-3@2x.png" alt="cdp2hd 10" />
+            </div>
+            <div class="overlap-group-1">
+              <div class="rectangle-70"></div>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">HDMI > USB C</span>
+              </p>
+              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Converti HDMI en USB C</span>
+              </p>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : CDP2HD</span>
+              </p>
+              <div class="usb-c" style="top: 70px;">
+                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
+                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
+                  <span class="inter-normal-tundora-14px">USB C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlap-group-container-2 overlap-group-container-4">
+            <div class="overlap-group">
+              <div class="rectangle-97"></div>
+              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/CDP2VGA.jpg" alt="cdp2hd 10" />
+            </div>
+            <div class="overlap-group-1">
+              <div class="rectangle-70"></div>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">VGA > USB C</span>
+              </p>
+              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Converti VGA en USB C</span>
+              </p>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : CDP2VGA</span>
+              </p>
+              <div class="usb-c" style="top: 70px;">
+                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
+                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
+                  <span class="inter-normal-tundora-14px">USB C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlap-group-container-2 overlap-group-container-4">
+            <div class="overlap-group">
+              <div class="rectangle-97"></div>
+              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/HDE003MB.jpg" alt="cdp2hd 10" />
+            </div>
+            <div class="overlap-group-1">
+              <div class="rectangle-70"></div>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Câble HDMI</span>
+              </p>
+              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Câble vidéo HDMI de 3m</span>
+              </p>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : HDE003MB</span>
+              </p>
+              <div class="usb-c" style="top: 70px;">
+                <img class="hdmi-icon" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/hdmi-icon-nobg.png" alt="istockphoto-1138477098-612x612 10" />
+                <!-- <img 
+                    class="hdmi-icon"
+                    src="./img/hdmi-icon.png"
+                    alt="istockphoto-1138477098-612x612 10"
+                  /> -->
+                <div class="usb-c-1 inter-extra-bold-tundora-14px" style=" line-height: 1.5px;">
+                  <span class="inter-normal-tundora-14px">HDMI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlap-group-container-2 overlap-group-container-4">
+            <div class="overlap-group">
+              <div class="rectangle-97"></div>
+              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/th2.jpg" alt="cdp2hd 10" />
+            </div>
+            <div class="overlap-group-1">
+              <div class="rectangle-70"></div>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">DELL Multiport</span>
+              </p>
+              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Adaptateur Multiport vers USB-C</span>
+              </p>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : DA305</span>
+              </p>
+              <div class="usb-c" style="top: 70px;">
+                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
+                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
+                  <span class="inter-normal-tundora-14px">USB C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <div class="overlap-group-container">
+          <div class="overlap-group-container-2 overlap-group-container-4">
+            <div class="overlap-group">
+              <div class="rectangle-97"></div>
+              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/450-AGOQ.jpg" alt="cdp2hd 10" />
+            </div>
+            <div class="overlap-group-1">
+              <div class="rectangle-70"></div>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Chargeur DELL</span>
+              </p>
+              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Chargeur DELL 90W USB-C</span>
+              </p>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : 450-AGOQ</span>
+              </p>
+              <div class="usb-c" style="top: 70px;">
+                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
+                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
+                  <span class="inter-normal-tundora-14px">USB C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlap-group-container-2 overlap-group-container-4">
+            <div class="overlap-group">
+              <div class="rectangle-97"></div>
+              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/492-BBZU.jpg" alt="cdp2hd 10" />
+            </div>
+            <div class="overlap-group-1">
+              <div class="rectangle-70"></div>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Chargeur DELL</span>
+              </p>
+              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Chargeur DELL 90W DPI</span>
+              </p>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 80px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : 492-BBZU</span>
+              </p>
+              <div class="usb-c" style="top: 70px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accesoires-commands">
+        <div class="titre titre-3">
+          <div class="rectangle"></div>
+          <div class="s-com inter-extra-bold-tundora-14px">
+            <span class="inter-extra-bold-tundora-14px">Accessoires complémentaires</span>
+          </div>
+        </div>
+        <div class="overlap-group-container">
+          <div class="overlap-group-container-2 overlap-group-container-4">
+            <div class="overlap-group">
+              <div class="rectangle-97"></div>
+              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/th.jpg" alt="cdp2hd 10" />
+            </div>
+            <div class="overlap-group-1">
+              <div class="rectangle-70"></div>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ecran Dell 24'</span>
+              </p>
+              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ecran 24', entrée HDMI, VGA et USB C.</span>
+              </p>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : P2422H</span>
+              </p>
+              <div class="usb-c" style="top: 70px;">
+                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
+                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
+                  <span class="inter-normal-tundora-14px">USB C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlap-group-container-2 overlap-group-container-4">
+            <div class="overlap-group">
+              <div class="rectangle-97"></div>
+              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/WD19S 130 W.jpg" alt="cdp2hd 10" />
+            </div>
+            <div class="overlap-group-1">
+              <div class="rectangle-70"></div>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Station d'accueil</span>
+              </p>
+              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Station d’accueil Dell - WD19S 130 W
+                </span>
+              </p>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : WD19S, 130W</span>
+              </p>
+              <div class="usb-c" style="top: 70px;">
+                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
+                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
+                  <span class="inter-normal-tundora-14px">USB C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlap-group-container-2 overlap-group-container-4">
+            <div class="overlap-group">
+              <div class="rectangle-97"></div>
+              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/th2.jpg" alt="cdp2hd 10" />
+            </div>
+            <div class="overlap-group-1">
+              <div class="rectangle-70"></div>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">DELL Multiport</span>
+              </p>
+              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
+                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Adaptateur Multiport vers USB-C</span>
+              </p>
+              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
+                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : DA305</span>
+              </p>
+              <div class="usb-c" style="top: 70px;">
+                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
+                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
+                  <span class="inter-normal-tundora-14px">USB C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
