@@ -1,5 +1,181 @@
+const adaptateur ={
+    "attache": [
+        {
+            "key": "CDCS",
+            "email": "leila.baune@safrangroup.com"
+        },
+        {
+            "key": "YMX",
+            "email": "laetitia.sanchez@safrangroup.com"
+        },
+        {
+            "key": "LK/s",
+            "email": "carine.fritz@safrangroup.com"
+        },
+        {
+            "key": "YXP/s",
+            "email": "isabelle.billard@safrangroup.com"
+        },
+        {
+            "key": "YXA/s",
+            "email": "isabelle.billard@safrangroup.com"
+        },
+        {
+            "key": "KM",
+            "email": "estelle.bourhis@safrangroup.com"
+        },
+        {
+            "key": "KMG",
+            "email": "nathalie.weber@safrangroup.com"
+        },
+        {
+            "key": "KMP/KMD",
+            "email": "samira.errahouane@safrangroup.com"
+        },
+        {
+            "key": "IO/s",
+            "email": "claire.pochon@safrangroup.com"
+        },
+        {
+            "key": "IHX/s",
+            "email": "laura.krebs@safrangroup.com"
+        },
+        {
+            "key": "MC/sMF/sAVM/s",
+            "email": "elisabeth.bories@safrangroup.com"
+        },
+        {
+            "key": "IX",
+            "email": "celine.pedinielli@safrangroup.com"
+        },
+        {
+            "key": "LMV/S",
+            "email": "caroline.juchereau@safrangroup.com"
+        },
+        {
+            "key": "KC",
+            "email": "frederique.morteau@safrangroup.com"
+        },
+        {
+            "key": "YRK",
+            "email": "edwige.lebret@safrangroup.com"
+        },
+        {
+            "key": "IY/s",
+            "email": "isabelle.guery-pissot@safrangroup.com"
+        },
+        {
+            "key": "HP",
+            "email": "ana.martins@safrangroup.com"
+        },
+        {
+            "key": "IC/s",
+            "email": "isabelle.commeinhes@safrangroup.com"
+        },
+        {
+            "key": "YC/s",
+            "email": "laure.francois@safrangroup.com"
+        },
+        {
+            "key": "YMJs+YMM's",  
+            "email":"camille,gosselin@safrangroup.com"
+        },
+        {
+            "key": "YEI",
+            "email": "olivia.rouchy@safrangroup.com"
+        },
+        {
+            "key": "YRC",
+            "email": "julie.raisseguier@safrangroup.com"
+        },
+        {
+            "key": "YRM",
+            "email": "julie.raisseguier@safrangroup.com"
+        },
+        {
+            "key": "KE",
+            "email": "laurence.hoffmann@safrangroup.com"
+        },
+        {
+            "key": "YES",
+            "email": "laurence.hoffmann@safrangroup.com"
+        },
+        {
+            "key": "YR/s",
+            "email": "lydie.trampon@safrangroup.com"
+        },
+        {
+            "key": "CA/s",
+            "email": "joelle.messmer@safrangroup.com"
+        },
+        {
+            "key": "YM/s",
+            "email": "veronique.de-saint-chartrier2@safrangroup.com"
+        },
+        {
+            "key": "AC/s",
+            "email": "charlene.bellanger@safrangroup.com"
+        },
+        {
+            "key": "PA/setPAL/s",
+            "email": "guilaine.faidre@safrangroup.com"
+        },
+        {
+            "key": "YQ/s",
+            "email": "megane.de-sousa@safrangroup.com"
+        },
+        {
+            "key": "H/s",
+            "email": "anne.bouchard@safrangroup.com"
+        },
+        {
+            "key": "LD/s",
+            "email": "pascale.sgouridis@safrangroup.com"
+        },
+        {
+            "key": "LDM/s",
+            "email": "virginie.climecot@safrangroup.com"
+        }
+    ]
+}
 
-var emailGestionnaire = "user@example.com"; //document.getElementById("divEmailGest").textContent;
+
+var emailGestionnaire = ""; 
+
+const input = document.querySelector('#input-value')
+const selectElement = document.querySelector('#attache');
+var responseCopy;
+//const url = "https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/attache.json"
+
+// fetch(url).then(data => data.json()).then(res => {
+//     responseCopy = res
+//     for (const key of res.attache) {
+//         const optionElement = document.createElement('option');
+//         optionElement.text = key.key;
+//         selectElement.appendChild(optionElement);
+//     }
+// });
+
+for (const key of adaptateur.attache) {
+    const optionElement = document.createElement('option');
+    optionElement.text = key.key;
+    selectElement.appendChild(optionElement);
+}
+
+selectElement.addEventListener('click', () => {
+    const attacheSelect = selectElement.options[selectElement.selectedIndex].value;
+    //console.log("JSON : " +responseCopy)
+    for(const key of  adaptateur.attache){
+            if(attacheSelect==key.key){
+                input.value = key.email;
+                emailGestionnaire = key.email; 
+               }
+    }
+});
+
+
+//"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/Listing_gestionnaires_commandes_20230525.xlsx
+
 function openOutlook(ref) {
     var email = emailGestionnaire;
     var subject = "Commande Claviers Souris";
@@ -143,4 +319,5 @@ function showData(datafile, divId) {
         });
 
 }
-showData('clavier-souris.json', "div0");
+//showData('clavier-souris.json', "div0"); this in local
+showData('https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/data/clavier-souris.json', "div0")
