@@ -192,7 +192,7 @@ function showData(datafile, divId) {
     fetch(datafile)
         .then((response) => response.json())
         .then((res) => {
-            const data = res.clavier_souris;
+            const data = res.clavierSouris;
             const div0 = document.getElementById(divId)
             // Iterate over the data array
             for (let i = 0; i < data.length; i += 4) {
