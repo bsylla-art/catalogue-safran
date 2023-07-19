@@ -1,4 +1,5 @@
-showData2(
+
+showData(
     
     { 
         "clavierSouris" : 
@@ -50,6 +51,16 @@ showData2(
     
     ]
     }
-     
+
     
     , "div0"); 
+
+
+
+
+
+
+
+
+
+
