@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="utf-8" />
-  
-   <link rel="stylesheet" href="clavier-souris.css">  <!--this in local-->
- <!-- <link rel="stylesheet" href="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/style/clavier-souris.css"> -->
+  <!--this in local
+   <link rel="stylesheet" href="clavier-souris.css">-->
+   
+   <!-- this in sharepoint -->
+  <link rel="stylesheet" href="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/style/clavier-souris.css">
+
 </head>
 <body style="margin: 0; background: #ffffff">
   <input type="hidden" id="anPageName" name="page" value="index" />
@@ -151,10 +154,10 @@
         <div class="titre titre-3">
           <div class="rectangle"></div>
           <div>
-            <select id="attache">
+            <select id="attache" style=" width : 200px;height: 25px;">
               <option value="" disabled selected>--choisir un attaché--</option>
             </select>
-            <input id="input-value" type="text" width="200%" height="200%">
+            <input id="input-value" type="text" style="width : 250px; height: 25px; " >
           </div>
 
           <p class="s-com inter-extra-bold-tundora-14px">
@@ -257,11 +260,17 @@
   </div>
   <div>
 
+    <!-- these in local  -->
+<!-- 
  <script src="clavier-souris.js"> </script>  
  <script src="attache-email-data.js"> </script> 
- <script src="clavier-souris-data.js"> </script> 
- <!-- these in local  -->
+ <script src="clavier-souris-data.js"> </script>
+ --> 
 
-   <!-- <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/js/clavier-souris.js"> </script> -->
+ <!-- these in sharepoint   -->
+   <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/js/clavier-souris.js"> </script>
+   <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/data/attache-email-data.js"> </script>
+   <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/data/clavier-souris-data.js"> </script>
+  
 </body>
 </html>
