@@ -1,53 +1,30 @@
-
 showData(
     
     { 
-        "clavierSouris" : 
+        "ClaviersEtSouris" : 
     [
-        {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/CDP2VGA.jpg",
-        "nom":"VGA > USB C" ,
-         "description":"Converti VGA en USB C",
-         "ref":"CDP2VGAA", 
-         "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png",
-         "typeCable":"USB C"
+        {"urlImg":
+                  "https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/images/Claviersetsouris/F2182664.jpg",
+        "nom":"Clavier et Souris" ,
+         "description":"Le clavier et la souris câblés Hama Cortino pour toutes les tâches informatiques quotidiennes",
+         "ref":"F2182664", 
+        
+         
+         
          },
-         {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/CDP2VGA.jpg",
-         "nom":"VGA > USB C" ,
-          "description":"Converti VGA en USB C",
-          "ref":"CDP2VGA", 
-          "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png",
-          "typeCable":"USB C"
+         {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/images/Claviersetsouris/570-AALK.webp",
+         "nom":"Dell Wireless Mouse" ,
+          "description":"Souris sans fil Dell - Précision et commodité pour une utilisation quotidienne",
+          "ref":"570-AALK", 
+        
+         
           },
-          {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/CDP2VGA.jpg",
-          "nom":"VGAC > USB C" ,
-           "description":"Converti VGA en USB C",
-           "ref":"CDP2VGA", 
-           "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png",
-           "typeCable":"USB C"
-           },
-           {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/CDP2VGA.jpg",
-           "nom":"VGA > USB C" ,
-            "description":"Converti VGA en USB C",
-            "ref":"CDP2VGA", 
-            "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png",
-            "typeCable":"USB C"
-            }
-            ,
-           {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/CDP2VGA.jpg",
-           "nom":"VGA > USB C" ,
-            "description":"Converti VGA en USB C",
-            "ref":"CDP2VGA", 
-            "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png",
-            "typeCable":"USB C"
-            }
-            ,
-           {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/CDP2VGA.jpg",
-           "nom":"VGA > USB C" ,
-            "description":"Converti VGA en USB C",
-            "ref":"CDP2VGA", 
-            "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png",
-            "typeCable":"USB C"
-            }
+          {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/images/Claviersetsouris/580-AKLJ.webp",
+          "nom":"Dell Wireless Keyboard" ,
+           "description":"Clavier sans fil Dell - Confortable et fiable pour une saisie sans soucis",
+           "ref":"460-BDKC", 
+        
+           }
     
     ]
     }

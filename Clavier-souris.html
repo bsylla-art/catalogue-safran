@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="utf-8" />
-  <!--this in local
-   <link rel="stylesheet" href="clavier-souris.css">-->
+  <!--this in local -->
+    <!----> <link rel="stylesheet" href="clavier-souris.css">
    
-   <!-- this in sharepoint -->
+    <!--  this in sharepoint  
   <link rel="stylesheet" href="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/style/clavier-souris.css">
+  -->  
 
 </head>
 <body style="margin: 0; background: #ffffff">
@@ -151,13 +152,14 @@
         </div>
       </div>
     <div  class="accesoires-commands">
-        <div class="titre titre-3">
+        <div class="titre titre-33">
           <div class="rectangle"></div>
           <div>
-            <select id="attache" style=" width : 200px;height: 25px;">
-              <option value="" disabled selected>--choisir un attaché--</option>
+            <select id="attache" style=" width : 200px;height: 25px;"  onchange="toggleButton()">
+              <option value="" disabled selected>--choisir une attache--</option>
             </select>
-            <input id="input-value" type="text" style="width : 250px; height: 25px; " >
+            <input  id="input-value" type="text" style="width : 250px; height: 25px;">
+            <!-- <button id="question-button"  onclick="openOutlookToAskQuestion()" disabled style="  width : 200px; height: 25px ;  background-color: #95b3bf; color:white"> Contacter mon gestionnaire</button> -->
           </div>
 
           <p class="s-com inter-extra-bold-tundora-14px">
@@ -168,109 +170,38 @@
          <!-- some Js code  --> 
         </div> 
     </div>
-    <div class="accesoires-commands">
-        <div class="titre titre-3">
-          <div class="rectangle"></div>
-          <div class="s-com inter-extra-bold-tundora-14px">
-            <span class="inter-extra-bold-tundora-14px">Accessoires complémentaires</span>
-          </div>
-        </div>
+    <div  class="accesoires-commands">
+      <div class="warning-1 warning">
+        <img class="group-29 group" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/group-29-1@2x.png" alt="Group 29" />
+        <p >
+          <span class="inter-extra-bold-tundora-14px">Je ne trouve pas l'equipement que je recherche !</span>
+          <br />
+          <br />
+         
+          <span class="inter-normal-tundora-14px"> 
+            <button id="question-button" title="Veuillez d'abord selectionner votre attache "  onclick="openOutlookToAskQuestion()" disabled style="  width : 300px; height: 40px ;  background-color: #95b3bf; color:white"> Je me rapproche de mon gestionnaire</button>
+ 
+          </span>
 
-        <div class="overlap-group-container">
-          <div class="overlap-group-container-2 overlap-group-container-4">
-            <div class="overlap-group">
-              <div class="rectangle-97"></div>
-              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/th.jpg" alt="cdp2hd 10" />
-            </div>
-            <div class="overlap-group-1">
-              <div class="rectangle-70"></div>
-              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
-                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ecran Dell 24'</span>
-              </p>
-              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
-                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ecran 24', entrée HDMI, VGA et USB C.</span>
-              </p>
-              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
-                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : P2422H</span>
-              </p>
-              <div class="usb-c" style="top: 70px;">
-                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
-                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
-                  <span class="inter-normal-tundora-14px">USB C</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="overlap-group-container-2 overlap-group-container-4">
-            <div class="overlap-group">
-              <div class="rectangle-97"></div>
-              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/WD19S 130 W.jpg" alt="cdp2hd 10" />
-            </div>
-            <div class="overlap-group-1">
-              <div class="rectangle-70"></div>
-              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
-                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Station d'accueil</span>
-              </p>
-              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
-                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Station d’accueil Dell - WD19S 130 W
-                </span>
-              </p>
-              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
-                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : WD19S, 130W</span>
-              </p>
-              <div class="usb-c" style="top: 70px;">
-                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
-                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
-                  <span class="inter-normal-tundora-14px">USB C</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="overlap-group-container-2 overlap-group-container-4">
-            <div class="overlap-group">
-              <div class="rectangle-97"></div>
-              <img class="cdp2hd-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/th2.jpg" alt="cdp2hd 10" />
-            </div>
-            <div class="overlap-group-1">
-              <div class="rectangle-70"></div>
-              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
-                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">DELL Multiport</span>
-              </p>
-              <p class="cet-adaptateur-perme inter-normal-tundora-12px">
-                <span class="inter-normal-tundora-12px text-space" style="white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Adaptateur Multiport vers USB-C</span>
-              </p>
-              <p class="adaptateur-hdmi-to-usb-c inter-extra-bold-tundora-14px">
-                <span class="inter-extra-bold-tundora-14px" style="line-height: 10.2px;top: 120px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;">Ref : DA305</span>
-              </p>
-              <div class="usb-c" style="top: 70px;">
-                <img class="istockphoto-1138477098-612x612-10" src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/istockphoto-1138477098-612x612-10-3@2x.png" alt="istockphoto-1138477098-612x612 10" />
-                <div class="usb-c-1 inter-extra-bold-tundora-14px" style="top: 315px; line-height: 4.5px;">
-                  <span class="inter-normal-tundora-14px">USB C</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        </p>
+      </div>
 
     </div>
+   
 
-    <!-- ###################################################################################################################################################### -->
- </div>
-  </div>
   <div>
 
     <!-- these in local  -->
-<!-- 
+<!--  --> 
  <script src="clavier-souris.js"> </script>  
  <script src="attache-email-data.js"> </script> 
  <script src="clavier-souris-data.js"> </script>
- --> 
 
- <!-- these in sharepoint   -->
+
+ <!-- these in sharepoint 
    <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/js/clavier-souris.js"> </script>
    <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/data/attache-email-data.js"> </script>
    <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/data/clavier-souris-data.js"> </script>
-  
+ -->
 </body>
 </html>

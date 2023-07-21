@@ -10,10 +10,10 @@
   --tundora: #444444;
   --white: #ffffff;
 
-  --font-size-m: 18px;
-  --font-size-xl: 32px;
-  --font-size-xs: 12px;
-  --font-size-xss: 16px;
+  --font-size-m: 16px;
+  --font-size-xl: 30px;
+  --font-size-xs: 10px;
+  --font-size-xss: 14px;
 
   --font-family-inter: "Inter", Helvetica;
 }
@@ -25,6 +25,14 @@
   font-style: normal;
   font-weight: 800;
 }
+.inter-extra-bold-tundora-12px {
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 800;
+}
+
 
 .inter-normal-tundora-14px {
   color: var(--tundora);
@@ -32,6 +40,13 @@
   font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 400;
+}
+.inter-normal-tundora-12-1px {
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 200;
 }
 
 .inter-normal-tundora-12px {
@@ -254,11 +269,11 @@
 }
 
 .index .overlap-group {
-  height: 203px;
-  margin-right: 4px;
-  margin-top: 5px;
+  height: 205px;
+  margin-right: 3px;
+  margin-top: 3px;
   position: relative;
-  width: 203px;
+  width: 205px;
 }
 
 .index .rectangle-97 {
@@ -285,17 +300,19 @@
   height: 147px;
   position: relative;
   width: 208px;
+ 
 }
 
 .index .rectangle-70 {
   background-color: var(--mystic);
-  border-radius: 0px 0px 10px 10px;
-  height: 147px;
+  border-radius: 10px 10px 10px 10px;
+  height: 144px;
   left: 0;
   position: absolute;
-  top: 0;
+  
   width: 203px;
   margin-left: 1px;
+  margin-top: 4px;
 }
 
 .index .adaptateur-hdmi-to-usb-c {
@@ -796,9 +813,9 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  min-height: 365px;
-  padding: 3px 3px;
-  width: 217px;
+  min-height: 360px;
+  padding: 0px 0px;
+  width: 212px;
 }
 
 .index .partie {
@@ -829,6 +846,24 @@
   display: flex;
   flex-direction: column;
 }
+.index-3 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  height: 2811px;
+  overflow: hidden;
+  padding: 13px 0;
+  width: 1100px;
+}
+.index .titre-33 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 110000px;
+}
 
 .index .warning {
   align-items: flex-start;
@@ -839,6 +874,33 @@
 }
 
 .index .text-space {
-  line-height: 15px;
+  line-height: 18px;
   top: 3px;
+}
+
+
+.overlap-group-container-4:hover  {
+  
+  align-items: flex-end;
+  
+
+  background-color:  #43798f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  padding: 0px 0px;
+  width: 212px;
+  
+
+}
+.btn-question {
+  width : 200px;
+  height: 25px ;
+   background-color: #95b3bf;
+   text-align: center;
+   border: none;
+   
+ 
+
 }
