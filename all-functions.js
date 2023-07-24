@@ -24,7 +24,7 @@ function selectEmailByAttach(atacheEmailData){
         //console.log("JSON : " +responseCopy)
         for(const key of  sortedAtacheEmail.attache){
                 if(attacheSelect==key.key){
-                    input.value = key.email;
+                    input.value = key.prenom + " " + key.nom;
                     emailGestionnaire = key.email; 
                    }
         }
@@ -34,10 +34,10 @@ function selectEmailByAttach(atacheEmailData){
 
 //"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/Listing_gestionnaires_commandes_20230525.xlsx
 
-function openOutlookCommandArticle(ref,nom) {
+function openOutlookCommandArticle(ref,name) {
     var email = emailGestionnaire;
     var subject = "Commande Claviers Souris";
-    var body = `Bonjour, %0D%0A Je commande le produit`+ nom+ ` dont la référence : ` + ref + `.  %0D%0A La quantité : 1.  %0D%0A Cordialement.`;
+    var body = `Bonjour, %0D%0A Je commande le produit`+ name+ ` dont la référence : ` + ref + `.  %0D%0A La quantité : 1.  %0D%0A Cordialement.`;
     if (email == "") {
         alert("Selectionnez votre gestionnaire s'il vous plait!!");
     }
@@ -49,7 +49,7 @@ function openOutlookCommandArticle(ref,nom) {
 
 
 function showData(datafile, divId) {
-            const data = datafile.ClaviersEtSouris;
+            const data = datafile; 
             const div0 = document.getElementById(divId)
             // Iterate over the data array
             for (let i = 0; i < data.length; i += 4) {
@@ -66,7 +66,7 @@ function showData(datafile, divId) {
                     const div1_1 = document.createElement("div");
                     div1_1.classList.add("overlap-group-container-2");
                     div1_1.classList.add("overlap-group-container-4");
-                    div1_1.setAttribute("onclick", `openOutlookCommandArticle('${item.ref}', '${item.nom}')`);
+                    div1_1.setAttribute("onclick", `openOutlookCommandArticle('${item.ref}', '${item.name}')`);
                     div1.style= "cursor: pointer";
 
                     //div1_2
@@ -99,8 +99,8 @@ function showData(datafile, divId) {
                     p1_3_1.classList.add("inter-extra-bold-tundora-14px");
                     const span1_3_1 = document.createElement("span");
                     span1_3_1.classList.add("inter-extra-bold-tundora-14px");
-                    span1_3_1.style = "line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;";
-                    span1_3_1.innerHTML = item.nom;
+                    span1_3_1.style = "line-height: 18.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;";
+                    span1_3_1.innerHTML = item.name;
                     p1_3_1.appendChild(span1_3_1);
 
 
@@ -187,5 +187,3 @@ function toggleButton() {
    
    
   }
-  
-

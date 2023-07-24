@@ -3,7 +3,7 @@ showData(
   
     [
         {"urlImg":
-                  "https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/images/Claviersetsouris/F2182664.jpg",
+                 "https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/images/Claviersetsouris/F2182664.jpg",
         "name":"Clavier et Souris" ,
          "description":"Le clavier et la souris câblés Hama Cortino pour toutes les tâches informatiques quotidiennes",
          "ref":"F2182664",  
