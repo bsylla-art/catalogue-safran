@@ -8,8 +8,6 @@ function selectEmailByAttach(adaptateur){
         optionElement.text = key.key;
         selectElement.appendChild(optionElement);
         const optionItems = document.querySelector(selectElement.option);
-        console.log(optionItems)
-
     }
     
     selectElement.addEventListener('click', () => {
