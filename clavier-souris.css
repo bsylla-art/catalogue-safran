@@ -1,7 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Inter:400,800");
 
-
 :root {
   --black: #000000;
   --concrete: #f2f2f2;
@@ -26,6 +25,73 @@
   font-weight: 800;
 }
 
+.inter-extra-bold-tundora-144px {
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+  font-size:9px;
+  font-style: normal;
+  font-weight: 800;
+  padding-top: 0px;
+  /* margin-right: 10px; */
+}
+.image-section{
+  display: flex;
+  align-items: center;
+   padding: 20px;
+   
+}
+.column1 {
+  flex: 1; /* Distribute available space equally among columns */
+  padding: 10px;
+  margin-right: 0px; 
+  min-height: 0px;
+  
+}
+
+.column2 {
+  flex: 2; /* Distribute available space equally among columns */
+  padding: 10px;
+  margin-right: 0px; 
+  min-height: 0px;
+}
+
+.column3 {
+  flex: 3; /* Distribute available space equally among columns */
+  padding: 10px;
+  margin-right: 0px; 
+  min-height: 0px;
+}
+
+.column4 {
+  flex: 4; /* Distribute available space equally among columns */
+  padding: 10px;
+  margin-right: 0px; 
+  min-height: 0px;
+}
+.column5 {
+  flex: 5; /* Distribute available space equally among columns */
+  padding: 20px;
+  margin: 5px;
+}
+.image-with-content{
+    flex:1;
+    align-items: center;
+    padding-bottom: 200px;
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin-right: 20px;
+}
+.image-with-content-etape2{
+  flex:1;
+    align-items: center;
+    padding: 20px;
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin-right: 20px;
+}
+
 .inter-normal-tundora-14px {
   color: var(--tundora);
   font-family: var(--font-family-inter);
@@ -40,6 +106,15 @@
   font-size: var(--font-size-xs);
   font-style: normal;
   font-weight: 400;
+}
+
+.inter-normal-tundora-12cpx {
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+  /* display: flex; */
 }
 
 .inter-nextra-bold-tundora-12px {
@@ -204,6 +279,14 @@
   min-width: 798px;
 }
 
+.flex-row-1 {
+  align-items: center;
+  display: flex;
+  gap: 33px;
+  min-width: 798px;
+  margin-left: 2px;
+}
+
 .index .icon-information {
   height: 46px;
   width: 50px;
@@ -251,6 +334,15 @@
   display: flex;
   height: 365px;
   min-width: 713px;
+}
+
+.index .overlap-group-container-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 365px;
+  min-width: 713px;
+  margin-left: 10px;
+  /* justify-content: space-between; */
 }
 
 .index .overlap-group {
@@ -361,6 +453,10 @@
 
 .index .overlap-group-container-3 {
   margin-left: 27px;
+}
+
+.index .overlap-group-container-5 {
+  margin-right: 32px;
 }
 
 .index .commande-matriel {
@@ -633,6 +729,14 @@
   width: 159px;
 }
 
+.index .overlap-group66 {
+  align-self: flex-end;
+  height: 30px;
+  margin-left: 29px;
+  position: relative;
+  width: 150px;
+}
+
 .index .partie-4 {
   min-height: 117px;
   width: 159px;
@@ -655,6 +759,11 @@
 
 .index .surname-1 {
   top: 26px;
+  width: 155px;
+}
+
+.index .surname-11 {
+  top: 40px;
   width: 155px;
 }
 
@@ -792,7 +901,7 @@
 
 .index .overlap-group-container-4 {
   align-items: flex-end;
-  background-color: var(--nepal);
+  background-color: var(--nepal); 
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -800,6 +909,37 @@
   padding: 3px 3px;
   width: 217px;
 }
+
+.index .overlap-group-container-6 {
+  align-items: flex-end;
+  background-color: white; 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 365px;
+  padding: 3px 3px;
+  width: 217px;
+ 
+}
+
+div {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  /* padding: 0; */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+}
+
 
 .index .partie {
   align-items: center;
@@ -824,6 +964,12 @@
   position: absolute;
 }
 
+.index .surname-33 {
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+}
 .index .titre-3 {
   align-items: flex-start;
   display: flex;

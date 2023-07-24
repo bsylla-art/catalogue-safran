@@ -3,16 +3,17 @@ function selectEmailByAttach(adaptateur){
 
     const input = document.querySelector('#input-value')
     const selectElement = document.querySelector('#attache');
-    var responseCopy;
     for (const key of adaptateur.attache) {
         const optionElement = document.createElement('option');
         optionElement.text = key.key;
         selectElement.appendChild(optionElement);
+        const optionItems = document.querySelector(selectElement.option);
+        console.log(optionItems)
+
     }
     
     selectElement.addEventListener('click', () => {
         const attacheSelect = selectElement.options[selectElement.selectedIndex].value;
-        //console.log("JSON : " +responseCopy)
         for(const key of  adaptateur.attache){
                 if(attacheSelect==key.key){
                     input.value = key.email;
