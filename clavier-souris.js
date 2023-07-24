@@ -182,7 +182,7 @@ function toggleButton() {
    const questionButton=  document.getElementById("question-button");
    questionButton.removeAttribute("disabled");
    questionButton.removeAttribute("title");
-   questionButton.style=" background-color: #43798f;width : 300px; height: 40px ; cursor: pointer;border: none; color:white;";
+   questionButton.style=" background-color: #43798f;width : 300px; height: 40px ; cursor: pointer;border: none; color:white; font-size: medium;";
 
    
    
