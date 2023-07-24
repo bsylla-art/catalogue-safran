@@ -18,13 +18,100 @@
   --font-family-inter: "Inter", Helvetica;
 }
 
-.inter-extra-bold-tundora-14px {
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.index .overlap-group-container-6 {
+  align-items: flex-end;
+  background-color: white; 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 365px;
+  padding: 3px 3px;
+  width: 217px;
+  /* border: 2px solid;  */
+}
+
+.index .overlap-group66 {
+  align-self: flex-end;
+  height: 30px;
+  margin-left: 29px;
+  position: relative;
+  width: 150px;
+}
+.inter-extra-bold-tundora-1444px {
   color: var(--tundora);
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-m);
+  /* font-size: var(--font-size-m); */
+  font-size: 18px;
   font-style: normal;
   font-weight: 800;
 }
+.inter-extra-bold-tundora-14px {
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+  /* font-size: var(--font-size-m); */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.inter-extra-bold-tundora-144px {
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+  font-size:10px;
+  font-style: normal;
+  font-weight: 800;
+  padding-top: 0px;
+  
+  /* margin-right: 10px; */
+}
+.image-section{
+  display: flex;
+  align-items: center;
+  /* text-align: justify; */
+}
+.inter-normal-tundora-12cpx {
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  /* display: flex; */
+}
+.column1 {
+  flex: 1; /* Distribute available space equally among columns */
+  padding: 10px;
+  margin-right: 0px; 
+  min-height: 0px;
+  
+}
+
+.column2 {
+  flex: 2; /* Distribute available space equally among columns */
+  padding: 10px;
+  margin-right: 0px; 
+  min-height: 0px;
+}
+
+.column3 {
+  flex: 3; /* Distribute available space equally among columns */
+  padding: 10px;
+  margin-right: 0px; 
+  min-height: 0px;
+}
+
+.column4 {
+  flex: 4; /* Distribute available space equally among columns */
+  padding: 10px;
+  margin-right: 0px; 
+  min-height: 0px;
+}
+
 .inter-extra-bold-tundora-12px {
   color: var(--tundora);
   font-family: var(--font-family-inter);
@@ -37,7 +124,8 @@
 .inter-normal-tundora-14px {
   color: var(--tundora);
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-m);
+  /* font-size: var(--font-size-m); */
+  font-size: 11px;
   font-style: normal;
   font-weight: 400;
 }
@@ -189,7 +277,7 @@
 .index .overlap-group1 {
   height: 90px;
   margin-left: 3px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   position: relative;
   width: 715px;
 }
