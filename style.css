@@ -962,8 +962,8 @@
 }
 
 .index .text-space {
-  line-height: 18px;
-  top: 3px;
+  line-height: 13px; /*18px;*/
+  top: 25px;/*3px;*/
 }
 
 

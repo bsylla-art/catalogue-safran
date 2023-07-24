@@ -4,12 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <!--this in local -->
-  <!---->
-  <link rel="stylesheet" href="clavier-souris.css">
-
-  <!--  this in sharepoint  
-  <link rel="stylesheet" href="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/style/clavier-souris.css">
-  -->
+    <!----> <link rel="stylesheet" href="style.css">
+   
+    <!--  this in sharepoint  
+  <link rel="stylesheet" href="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/style/style.css">
+  -->  
 
 </head>
 <body style="margin: 0; background: #ffffff">
@@ -133,12 +132,18 @@
           <div class="titre titre-33">
             <div class="rectangle"></div>
             <div>
+              <select id="attache" style=" width : 200px;height: 25px;"  onchange="toggleButton()">
+                <option value="" disabled selected>--Choisissez votre attache--</option>
+              </select>
+              <input  id="input-value" type="text" style="width : 250px; height: 25px;">
+              <!-- <button id="question-button"  onclick="openOutlookToAskQuestion()" disabled style="  width : 200px; height: 25px ;  background-color: #95b3bf; color:white"> Contacter mon gestionnaire</button> -->
+            </div>
+            <!-- <div>
               <select id="attache" style=" width : 200px;height: 25px;" onchange="toggleButton()">
                 <option value="" disabled selected>--choisir une attache--</option>
               </select>
               <input id="input-value" type="text" style="width : 250px; height: 25px;">
-              <!-- <button id="question-button"  onclick="openOutlookToAskQuestion()" disabled style="  width : 200px; height: 25px ;  background-color: #95b3bf; color:white"> Contacter mon gestionnaire</button> -->
-            </div>
+            </div> -->
 
             <p class="s-com inter-extra-bold-tundora-14px">
               <span class="inter-extra-bold-tundora-14px">Câbles et adaptateurs les plus commandés sur Ariba</span>
@@ -168,23 +173,19 @@
               </span>
 
             </p>
-          </div>
-
-        </div>
-
-      </div>
     </div>
-</div>
-        <!-- these in local  -->
-        <!--   -->
-        <script src="clavier-souris.js"> </script>
-        <script src="attache-email-data.js"> </script>
-        <script src="clavier-souris-data.js"> </script>
+  <div>
+
+    <!-- these in local  -->
+<!--   --> 
+ <script src="all-functions.js"> </script>  
+ <script src="attache-email-data.js"> </script> 
+ <script src="clavier-souris-data.js"> </script>
 
 
 
-        <!-- these in sharepoint  
-   <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/js/clavier-souris.js"> </script>
+ <!-- these in sharepoint  
+   <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/js/all-functions.js"> </script>
    <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/data/attache-email-data.js"> </script>
    <script src="https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/data/clavier-souris-data.js"> </script>
 -->
