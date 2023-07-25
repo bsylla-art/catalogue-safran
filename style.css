@@ -124,8 +124,8 @@
 .inter-normal-tundora-14px {
   color: var(--tundora);
   font-family: var(--font-family-inter);
-  /* font-size: var(--font-size-m); */
-  font-size: 11px;
+  font-size: var(--font-size-m); 
+ 
   font-style: normal;
   font-weight: 400;
 }
@@ -140,7 +140,7 @@
 .inter-normal-tundora-12px {
   color: var(--tundora);
   font-family: var(--font-family-inter);
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 400;
 }
@@ -419,7 +419,7 @@
   letter-spacing: 0;
   line-height: 97.0px;
   position: absolute;
-  text-align: justify;
+  text-align: center;
   top: 31px;
   white-space: nowrap;
   width: 205px;
