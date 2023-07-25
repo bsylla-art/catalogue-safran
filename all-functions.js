@@ -186,12 +186,12 @@ function showDataWithUsbType(datafile, divId) {
         for (let j = i; j < Math.min(i + 4, data.length); j++) {
 
             const item = data[j];
-          
-
+            
             const div1_1 = document.createElement("div");
             div1_1.classList.add("overlap-group-container-2");
-            div1_1.classList.add("overlap-group-container-4");
-            div1_1.setAttribute("ondblclick", `openOutlook('${item.ref}')`);
+             div1_1.classList.add("overlap-group-container-4");
+            div1_1.setAttribute("onclick", `openOutlookCommandArticle('${item.ref}', '${item.name}')`);
+            div1.style= "cursor: pointer";
 
             //div1_2
             const div1_2 = document.createElement("div");
