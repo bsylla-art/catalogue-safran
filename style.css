@@ -10,7 +10,7 @@
   --tundora: #444444;
   --white: #ffffff;
 
-  --font-size-m: 16px;
+  --font-size-m: 14px;
   --font-size-xl: 30px;
   --font-size-xs: 10px;
   --font-size-xss: 14px;
@@ -55,7 +55,7 @@
   color: var(--tundora);
   font-family: var(--font-family-inter);
   /* font-size: var(--font-size-m); */
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 800;
 }
@@ -419,7 +419,7 @@
   letter-spacing: 0;
   line-height: 97.0px;
   position: absolute;
-  text-align: center;
+  text-align: justify;
   top: 31px;
   white-space: nowrap;
   width: 205px;

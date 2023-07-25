@@ -8,7 +8,7 @@ showData(
         },
         {  "urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/codes/images/CasquesEtAudio/520-AATB.webp",
             "name": "Dell Pro Wireless Headset",
-            "description": "Dell Pro Wireless Headset - Liberté sans fil pour une qualité audio supérieure.",
+            "description": "Dell Pro Wireless Headset",
             "ref": "520-AATB"
         }
     ]
