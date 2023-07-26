@@ -21,7 +21,7 @@ function selectEmailByAttach(atacheEmailData){
     
     selectElement.addEventListener('click', () => {
         const attacheSelect = selectElement.options[selectElement.selectedIndex].value;
-        //console.log("JSON : " +responseCopy)
+       
         for(const key of  sortedAtacheEmail.attache){
                 if(attacheSelect==key.key){
                     input.value = key.prenom + " " + key.nom;
@@ -32,12 +32,11 @@ function selectEmailByAttach(atacheEmailData){
 
 }
 
-//"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/Listing_gestionnaires_commandes_20230525.xlsx
 
 function openOutlookCommandArticle(ref,name) {
     var email = emailGestionnaire;
     var subject = "Commander un article";
-    var body = `Bonjour, %0D%0A Je commande le produit`+ name+ ` dont la référence : ` + ref + `.  %0D%0A La quantité : 1.  %0D%0A Cordialement.`;
+    var body = `Bonjour, %0D%0A Je commande le produit : %0D%0A Nom du produit : `+ name+ `, la référence : ` + ref + `.  %0D%0A La quantité : 1.  %0D%0A Cordialement.`;
     if (email == "") {
         alert("Selectionnez votre gestionnaire s'il vous plait!!");
     }
@@ -224,7 +223,7 @@ function showDataWithUsbType(datafile, divId) {
             const span1_3_1 = document.createElement("span");
             span1_3_1.classList.add("inter-extra-bold-tundora-14px");
             span1_3_1.style = "line-height: 10.2px;top: 10px;white-space: break-spaces;position: absolute;width: 194px; right: 10px;";
-            span1_3_1.innerHTML = item.nom;
+            span1_3_1.innerHTML = item.name;
             p1_3_1.appendChild(span1_3_1);
 
 
@@ -290,7 +289,7 @@ function showDataWithUsbType(datafile, divId) {
         div0.append(br1_2);
       
     }
-   // div0.removeChild(br1_1);
+   
    // div0.removeChild(br1_2);
    
 
