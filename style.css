@@ -60,6 +60,28 @@
   font-weight: 800;
 }
 
+.inter-extra-bold-tundora-24cpx {
+  /* color: var(--tundora);
+  font-family: var(--font-family-inter); */
+  /* font-size: var(--font-size-m); */
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+   font-size: 24px;
+  font-style: normal;
+  font-weight: 800; 
+}
+
+.inter-extra-bold-tundora-24cpt {
+  /* color: var(--tundora);
+  font-family: var(--font-family-inter); */
+  /* font-size: var(--font-size-m); */
+  color: var(--tundora);
+  font-family: var(--font-family-inter);
+   font-size: 24pt;
+  font-style: normal;
+  font-weight: 800; 
+}
+
 .inter-extra-bold-tundora-144px {
   color: var(--tundora);
   font-family: var(--font-family-inter);
