@@ -35,7 +35,7 @@ function selectEmailByAttach(atacheEmailData){
 
 function openOutlookCommandArticle(ref,name) {
     var email = emailGestionnaire;
-    var subject = "Commander un article";
+    var subject = "Commande Access IT";
     var body = `Bonjour, %0D%0A Je commande le produit : %0D%0A Nom du produit : `+ name+ `, la référence : ` + ref + `.  %0D%0A La quantité : 1.  %0D%0A Cordialement.`;
     if (email == "") {
         alert("Selectionnez votre gestionnaire s'il vous plait!!");
@@ -159,11 +159,11 @@ function showData(datafile, divId) {
                 }
 
                 const br1_1 = document.createElement("br");
-                const br1_2 = document.createElement("br");
+             
 
                 div0.appendChild(div1);
                 div0.append(br1_1);
-                div0.append(br1_2);
+              
               
             }
           
@@ -174,7 +174,8 @@ function showData(datafile, divId) {
 
 function showDataWithUsbType(datafile, divId) {
     const data = datafile;
-    const div0 = document.getElementById(divId)
+    const div0 = document.getElementById(divId);
+
     // Iterate over the data array
     for (let i = 0; i < data.length; i += 4) {
 
@@ -282,18 +283,12 @@ function showDataWithUsbType(datafile, divId) {
         }
 
         const br1_1 = document.createElement("br");
-        const br1_2 = document.createElement("br");
+        
 
         div0.appendChild(div1);
-        div0.append(br1_1);
-        div0.append(br1_2);
-      
+        div0.appendChild(br1_1);
+        
     }
-   
-   // div0.removeChild(br1_2);
-   
-
-
 
 
 }

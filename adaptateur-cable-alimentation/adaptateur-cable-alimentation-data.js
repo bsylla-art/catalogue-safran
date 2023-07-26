@@ -28,27 +28,7 @@ showDataWithUsbType(
             "ref":"HDE003MB", 
             "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/hdmi-icon-nobg.png",
             "typeCable":"HDMI"
-            },
-            {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/HDE003MB.jpg",
-            "name":"Câble HDMI" ,
-             "description":"Câble vidéo HDMI de 3cm",
-             "ref":"HDE003MB", 
-             "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/hdmi-icon-nobg.png",
-             "typeCable":"HDMI"
-             },
-             {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/HDE003MB.jpg",
-             "name":"Câble HDMI" ,
-              "description":"Câble vidéo HDMI de 3cm",
-              "ref":"HDE003MB", 
-              "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/hdmi-icon-nobg.png",
-              "typeCable":"HDMI"
-              },
-              {"urlImg":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/HDE003MB.jpg",
-              "name":"Câble HDMI" ,
-               "description":"Câble vidéo HDMI de 3cm",
-               "ref":"HDE003MB", 
-               "urlImgCable":"https://content.grp.collab.group.safran/snm/dsi/pub/CS/SitePages/Lounge_IT/ACCESSOIRES/hdmi-icon-nobg.png",
-               "typeCable":"HDMI"
-               },
+            }
+           
     ]
     , "div0"); 
