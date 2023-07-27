@@ -33,17 +33,26 @@ function selectEmailByAttach(atacheEmailData){
 }
 
 
-function openOutlookCommandArticle(ref,name) {
-    var email = emailGestionnaire;
-    var subject = "Commande Access IT";
-    var body = `Bonjour, %0D%0A Je commande le produit : %0D%0A Nom du produit : `+ name+ `, la référence : ` + ref + `.  %0D%0A La quantité : 1.  %0D%0A Cordialement.`;
-    if (email == "") {
-        alert("Selectionnez votre gestionnaire s'il vous plait!!");
-    }
-    else {
-        window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" + body;
-    }
-}
+ function openOutlookCommandArticle(ref,name) {  //%0D%0A
+     var email = emailGestionnaire;
+     var subject = "Commande Access IT";
+     var body = `Bonjour, \n Veuillez trouver ci-dessous mon besoin d’accessoires IT :\n  Désignation : `+ name+ ` \n Référence : ` + ref + ` \n Quantité : 1.`+` \n \n Site de livraison :`+
+     ` \n Contact livraison SAE « Nom, Prénom » : `+
+     ` \n \n Je souhaite commander plusieurs articles : `+ 
+     ` \n - Je retourne sur ma page articles `+
+     ` \n - Clique droit sur la référence de l’article, option copier `+
+     ` \n - Coller la référence dans ce mail `+
+     `\n \nVous en remerciant d’avance.`+
+     `\n \n Cordialement.`;
+
+    
+     if (email == "") {
+         alert("Selectionnez votre gestionnaire s'il vous plait!!");
+     }
+     else {
+         window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" +encodeURIComponent(body) ;
+     }
+ }
 
 
 
@@ -65,7 +74,7 @@ function showData(datafile, divId) {
                     const div1_1 = document.createElement("div");
                     div1_1.classList.add("overlap-group-container-2");
                     div1_1.classList.add("overlap-group-container-4");
-                    div1_1.setAttribute("onclick", `openOutlookCommandArticle('${item.ref}', '${item.name}')`);
+                    div1_1.setAttribute("ondblclick", `openOutlookCommandArticle('${item.ref}', '${item.name}')`);
                     div1.style= "cursor: pointer";
 
                     //div1_2
@@ -159,10 +168,13 @@ function showData(datafile, divId) {
                 }
 
                 const br1_1 = document.createElement("br");
+                const br1_2 = document.createElement("br");
              
 
                 div0.appendChild(div1);
                 div0.append(br1_1);
+                div0.append(br1_2);
+
               
               
             }
@@ -190,7 +202,7 @@ function showDataWithUsbType(datafile, divId) {
             const div1_1 = document.createElement("div");
             div1_1.classList.add("overlap-group-container-2");
              div1_1.classList.add("overlap-group-container-4");
-            div1_1.setAttribute("onclick", `openOutlookCommandArticle('${item.ref}', '${item.name}')`);
+            div1_1.setAttribute("ondblclick", `openOutlookCommandArticle('${item.ref}', '${item.name}')`);
             div1.style= "cursor: pointer";
 
             //div1_2
@@ -283,10 +295,12 @@ function showDataWithUsbType(datafile, divId) {
         }
 
         const br1_1 = document.createElement("br");
-        
+        const br1_2 = document.createElement("br");
+     
 
         div0.appendChild(div1);
-        div0.appendChild(br1_1);
+        div0.append(br1_1);
+        div0.append(br1_2);
         
     }
 
