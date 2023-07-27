@@ -36,7 +36,7 @@ function selectEmailByAttach(atacheEmailData){
  function openOutlookCommandArticle(ref,name) {  //%0D%0A
      var email = emailGestionnaire;
      var subject = "Commande Access IT";
-     var body = `Bonjour, \n Veuillez trouver ci-dessous mon besoin d’accessoires IT :\n  Désignation : `+ name+ ` \n Référence : ` + ref + ` \n Quantité : 1.`+` \n \n Site de livraison :`+
+     var body = `Bonjour, \n Veuillez trouver ci-dessous mon besoin d’accessoires IT : \n Désignation : ${name} \n Référence : ${ref}  \n Quantité : 1.`+` \n \n Site de livraison :`+
      ` \n Contact livraison SAE « Nom, Prénom » : `+
      ` \n \n Je souhaite commander plusieurs articles : `+ 
      ` \n - Je retourne sur ma page articles `+
@@ -45,12 +45,12 @@ function selectEmailByAttach(atacheEmailData){
      `\n \nVous en remerciant d’avance.`+
      `\n \n Cordialement.`;
 
-    
      if (email == "") {
          alert("Selectionnez votre gestionnaire s'il vous plait!!");
      }
      else {
-         window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" +encodeURIComponent(body) ;
+         //window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" +encodeURIComponent(body) ;
+         window.location.href = `mailto:${email}?subject=${subject}&body=${encodeURIComponent(body)}`;
      }
  }
 
@@ -310,10 +310,16 @@ function showDataWithUsbType(datafile, divId) {
 function openOutlookToAskQuestion() {
     var email = emailGestionnaire;
     var subject = "Question  au gestionnaire";
-    var body = `Bonjour, `;
-    window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" + body;
+    var body = `Bonjour,  \n« Veuillez écrire votre besoin » \n\nVous en remerciant d’avance. \n\nCordialement.`;
+    window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" +encodeURIComponent(body);
     
 }
+
+
+
+
+
+
 
 function toggleButton() {
    const questionButton=  document.getElementById("question-button");
